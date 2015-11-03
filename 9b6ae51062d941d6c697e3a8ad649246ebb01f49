@@ -1,0 +1,7 @@
+Verified+1: rdo-ci-jenkins <whayutin+rdocijenkins@redhat.com>
+Code-Review+2: Alan Pevec <alan.pevec@redhat.com>
+Submitted-by: Alan Pevec <alan.pevec@redhat.com>
+Submitted-at: Tue, 03 Nov 2015 18:47:48 +0100
+Reviewed-on: https://review.gerrithub.io/251306
+Project: openstack-packages/rally
+Branch: refs/heads/rpm-master
