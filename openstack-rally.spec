@@ -16,6 +16,15 @@ BuildRequires:    python2-devel
 BuildRequires:    python-jsonschema
 BuildRequires:    python-pbr
 BuildRequires:    python-setuptools
+BuildRequires:    python-oslo-config >= 2.6.0
+BuildRequires:    python-oslo-db >= 3.0.0
+BuildRequires:    python-oslo-log >= 1.8.0
+BuildRequires:    python-paramiko
+BuildRequires:    python-glanceclient >= 1.8.0
+BuildRequires:    python-neutronclient >= 2.6.0
+BuildRequires:    python-novaclient >= 2.29.0
+BuildRequires:    python-saharaclient >= 0.10.0
+BuildRequires:    python-subunit
 
 Requires:         python-babel
 Requires:         python-boto
@@ -25,8 +34,8 @@ Requires:         python-iso8601
 Requires:         python-jinja2
 Requires:         python-jsonschema
 Requires:         python-netaddr
-Requires:         python-oslo-config >= 1.11.0
-Requires:         python-oslo-db >= 1.7.0
+Requires:         python-oslo-config >= 2.6.0
+Requires:         python-oslo-db >= 3.0.0
 Requires:         python-oslo-i18n >= 1.5.0
 Requires:         python-oslo-log >= 1.8.0
 Requires:         python-oslo-serialization >= 1.4.0
@@ -37,19 +46,22 @@ Requires:         python-prettytable
 Requires:         PyYAML
 Requires:         python-psycopg2
 Requires:         python-designateclient
-Requires:         python-glanceclient
+Requires:         python-glanceclient >= 1.8.0
 Requires:         python-keystoneclient
-Requires:         python-novaclient
-Requires:         python-neutronclient
+Requires:         python-manila >= 1.3.0
+Requires:         python-novaclient >= 2.29.0
+Requires:         python-neutronclient >= 2.6.0
 Requires:         python-cinderclient
 Requires:         python-heatclient
 Requires:         python-ceilometerclient
 Requires:         python-ironicclient
-Requires:         python-saharaclient
+Requires:         python-saharaclient >= 0.10.0
+Requires:         python-swiftclient >= 2.2.0
 Requires:         python-troveclient
 Requires:         python-zaqarclient
-Requires:         python-subunit
 Requires:         python-requests >= 2.5.2
+Requires:         python-simplejson
+Requires:         python-subunit
 Requires:         python-sqlalchemy
 Requires:         python-sphinx
 Requires:         python-six >= 1.9.0
@@ -67,6 +79,7 @@ complex and reproducible test cases on real deployment scenarios.
 rm -rf {test-,}requirements.txt
 
 %build
+PYTHONPATH=. oslo-config-generator --config-file=etc/rally/rally-config-generator.conf
 %{__python2} setup.py build
 
 %install
