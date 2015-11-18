@@ -25,6 +25,7 @@ BuildRequires:    python-neutronclient >= 2.6.0
 BuildRequires:    python-novaclient >= 2.29.0
 BuildRequires:    python-saharaclient >= 0.10.0
 BuildRequires:    python-subunit
+BuildRequires:    python-sphinx
 
 Requires:         python-babel
 Requires:         python-boto
@@ -63,7 +64,6 @@ Requires:         python-requests >= 2.5.2
 Requires:         python-simplejson
 Requires:         python-subunit
 Requires:         python-sqlalchemy
-Requires:         python-sphinx
 Requires:         python-six >= 1.9.0
 Requires:         python-wsme
 
