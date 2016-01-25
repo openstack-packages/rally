@@ -1,0 +1,7 @@
+Verified+1: rdo-ci-jenkins <whayutin+rdocijenkins@redhat.com>
+Code-Review+2: John Trowbridge <trown@redhat.com>
+Submitted-by: John Trowbridge <trown@redhat.com>
+Submitted-at: Mon, 25 Jan 2016 22:12:06 +0100
+Reviewed-on: https://review.gerrithub.io/261182
+Project: openstack-packages/rally
+Branch: refs/heads/rpm-master
