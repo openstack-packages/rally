@@ -105,3 +105,4 @@ chmod a+x %{buildroot}%{python2_sitelib}/%{project}/deployment/serverprovider/pr
 %{_sysconfdir}/bash_completion.d/rally.bash_completion
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/rally/commit/?id=5bbe6b430f09d738f2a7f1fbff1d3b3d9ac589b7
